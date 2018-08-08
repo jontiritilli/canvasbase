@@ -1,14 +1,16 @@
 import React from 'react';
-import '../assets/css/app.css';
-import Logo from '../assets/images/logo.svg';
+import { Router, Link } from 'react-router-dom';
+
+import Header from './Header/Header';
+import Main from './Main/Main';
+import Footer from './Footer/Footer';
 
 const App = () => (
   <div>
     <div className="app">
-      <img src={Logo} alt="react logo" className="logo rotate" />
-      <h1>
-        {'Welcome to React'}
-      </h1>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   </div>
 );
