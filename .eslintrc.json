@@ -2,6 +2,7 @@
   "extends": "airbnb",
   "rules": {
     "linebreak-style": ["error", "windows"],
+    "no-console": ["error", { "allow": ["warn"] }],
     "react/jsx-one-expression-per-line": "error",
     "react/jsx-indent": ["error", 2],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
