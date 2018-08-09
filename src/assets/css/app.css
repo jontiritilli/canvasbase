@@ -6,38 +6,25 @@
   src: url(../fonts/mono.otf);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   margin: 0;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }
 
 .app {
-  background-color: #000;
-  color: #fff;
-  font-family: mono;
-  font-size: 50px;
-  padding: 50px;
-  text-align: center;
-}
-
-.app .logo {
-  height: 250px;
-}
-
-.app h1 {
-  color: rgb(220,220,220);
-  text-shadow: 0 0 20px rgb(228, 100, 100);
-  letter-spacing: 5px;
-}
-
-.rotate {
-  animation: spin 10s linear infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }

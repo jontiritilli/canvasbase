@@ -1,18 +1,24 @@
 import React from 'react';
-import { Router, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
-import Header from './Header/Header';
-import Main from './Main/Main';
-import Footer from './Footer/Footer';
+import Navigation from './Navigation';
+import Home from './Home';
+import Results from './Results';
+import Wallpaper from './Wallpaper';
+import userAccount from './userAccount';
 
-const App = () => (
-  <div>
-    <div className="app">
-      <Header />
-      <Main />
-      <Footer />
+import '../assets/css/app.css';
+
+const App = () => {
+  return (
+    <div className='app'>
+      <Navigation />
+      <Route exact path='/' component={Home} />
+      <Route path='/results' component={Results} />
+      <Route path='/results/:id' component={Wallpaper} />
+      <Route path='/account/:id' component={userAccount} />
     </div>
-  </div>
-);
+  )
+};
 
 export default App;

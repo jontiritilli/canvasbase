@@ -1,22 +1,30 @@
 {
-  "extends": "airbnb",
-  "rules": {
-    "linebreak-style": ["error", "windows"],
-    "react/jsx-one-expression-per-line": "error",
-    "react/jsx-indent": ["error", 2],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "quotes": ["error", "single"]
-  },
-  "env": {
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "node": true
-  },
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-        "jsx": true
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module",
+        "ecmaVersion": 6
+    },
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+        "constructor-super": "warn",
+        "no-const-assign": "warn",
+        "no-extra-semi": "error",
+        "no-this-before-super": "warn",
+        "no-undef": "warn",
+        "no-unreachable": "warn",
+        "no-unused-vars": "warn",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "valid-typeof": "warn"
     }
-  }
 }
