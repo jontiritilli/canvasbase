@@ -1,10 +1,14 @@
-import types from '../actions/types';
+import { POST_SEARCH, IMAGE_SEARCH } from '../actions/types';
 
-const DEFAULT_STATE = {}
+const DEFAULT_STATE = {};
 
-export default function (state = DEFAULT_STATE, action){
+export const search = (state = DEFAULT_STATE, action) => {
     switch(action.type){
-        default:
-            return state;
+      case POST_SEARCH:
+        return [...state, action.payload];
+      case IMAGE_SEARCH:
+        return [...state, action.payload];
+      default:
+        return state;
     }
 }
