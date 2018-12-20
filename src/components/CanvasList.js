@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Canvas from '../components/Canvas';
 import { searchByImage } from '../actions';
 
-function CanvasList({ data, onImageSelect }) {
+const CanvasList = ({ data, onImageSelect }) => {
   if(!data.length) {
     return (
       <div>

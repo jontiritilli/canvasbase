@@ -1,8 +1,6 @@
 import React from './react';
 
-export default (image, onImageSelect, key }) => {
-  console.log(image);
-  return (
+const Canvas = (image, onImageSelect, key ) => (
     <div className='container'>
       <div>
         <img src={ image } alt=""/>
@@ -12,4 +10,5 @@ export default (image, onImageSelect, key }) => {
       </button>
     </div>
   );
-};
+
+export default Canvas;
