@@ -39,10 +39,10 @@ class SearchBar extends Component {
           </div>
           <div className="row">
             <div className="input-group col-sm-6 mb-3">
-              <Field className='form-control' name='windowWidth' component={renderInput} type="text" placeholder={windowWidth} />
+              <Field className='form-control' name='windowWidth' component={renderInput} type="text" placeholder={`Device Width = `+windowWidth} />
             </div>
             <div className="input-group col-sm-6 mb-3">
-              <Field className='form-control' name='windowHeight' component={renderInput} type="text" placeholder={windowHeight} />
+              <Field className='form-control' name='windowHeight' component={renderInput} type="text" placeholder={`Device Height = `+windowHeight} />
             </div>
           </div>
         </form>
